@@ -52,6 +52,7 @@ class TrackController extends Controller
             'title' => ['required', 'string', 'max:255'],
             'artist' => ['required', 'string', 'max:255'],
             'url' => ['required', 'url', new PlayerUrl()],
+            'categorie' => ['required','integer'],
         ]);
 
         DB::beginTransaction();

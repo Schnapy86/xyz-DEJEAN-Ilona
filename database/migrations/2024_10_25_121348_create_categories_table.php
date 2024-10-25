@@ -14,8 +14,8 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Track::class)->constrained('tracks')->onDelete('cascade');
             $table->string('name');
+            $table->timestamps();
         });
     }
 
